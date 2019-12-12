@@ -1,0 +1,25 @@
+from turtle import *
+speed("fastest")
+# speed(5)
+pensize(2)
+pencolor("red")
+for i in range(36*2):
+    pu()
+    goto(0, 0)
+    pd()
+    if(i%2==1):
+        circle(-200,50)
+    else:
+        circle(200, 50)
+    pu()
+    goto(0,0)
+    # pd()
+    # circle(200,50)
+    right(5)
+goto(0,0)
+pd()
+pensize(5)
+seth(-90)
+fd(400)
+hideturtle()
+exitonclick()
